@@ -1,0 +1,50 @@
+there is traditional method to get datas from api,= > xmlhttpequest
+
+recent => async await fetch.
+
+syntax:
+
+.map(cb(currentvalue, index, array))
+
+1. it wont change the length of th array.
+2. it will return a new array.
+3. it always takes function as a parameter.
+
+
+cb=> callback : a fucntion that defines the transformation for each elemnt.
+currval=> the current elemnt being processed.
+index=> optional=> index of the current elemnt.
+arr=> optional: the original array.
+
+filter:
+
+syntax:
+
+.filter(cb(elemnt,ind,arr))
+
+1. it will change the length of th array.
+2. it will return a new array.
+3. it always takes function as a parameter.
+
+cb=> callback : a fucntion that defines the test for each elemnt.
+currval=> the current elemnt being processed.
+index=> optional=> index of the current elemnt.
+arr=> optional: the original array.
+
+
+reduce:
+
+1. it will change the length of th array.
+2. it will return a value or object.
+3. it always takes function as a parameter.
+
+syntax:
+
+.reduce(cb(accumulator,curr,ind,arr))
+
+cb=> callback : a fucntion that defines the transformation for each elemnt.
+accum=> the accumulated value
+currval=> the current elemnt being processed.
+index=> optional=> index of the current elemnt.
+arr=> optional: the original array.
+initialvalue(optional): a starting value for the accumulator
